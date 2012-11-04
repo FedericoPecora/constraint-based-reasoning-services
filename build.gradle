@@ -18,19 +18,21 @@ group = 'constraint_based_reasoning_services'
 
 repositories {
   mavenLocal()
-  maven {
-    url 'http://robotbrains.hideho.org/nexus/content/groups/ros-public'
-  }
+  //maven {
+  //  url 'http://robotbrains.hideho.org/nexus/content/groups/ros-public'
+  //}
 
-  flatDir {
-    name 'localRepository'
-    dirs 'lib'
-  }
+  //flatDir {
+  //  name 'localRepository'
+  //  dirs 'lib'
+  //}
 }
 
 dependencies {
-  compile fileTree(dir: 'lib', include: '**/*.jar')
-    
+    compile fileTree(dir: 'lib', include: '**/*.jar')
+    compile fileTree(dir: '../meta_csp_framework/lib', include: '**/*.jar')
+    compile 'meta_csp_framework:meta_csp_framework:0.0.0-SNAPSHOT'
+
   // from flatDir (lib/)
   //compile 'jaret:jaretutil:0.32'
   //compile 'orbital:orbital-core:1.3.0'
