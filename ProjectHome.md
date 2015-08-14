@@ -1,0 +1,1 @@
+This project is based on the Meta-CSP framework (meta-csp-framework.googlecode.com).  It is used in EU project RACE (project-race.eu).
